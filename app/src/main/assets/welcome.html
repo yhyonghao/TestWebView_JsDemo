@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Welcome zsp Pager</title>
+        <style type="text/css">
+            * {
+                margin: 10px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
+            }
+
+            #userInfo{
+                background-color: #ffcc00;
+                color: red;
+                text-shadow: 2px 2px 5px gray;
+            }
+
+            button{
+              border: 1px solid blue;
+              background-color: #ffcc00;
+
+            }
+
+        </style>
+    </head>
+    <body>
+      <script type="text/javascript">
+        function showInfo(){
+           var userInfo=document.getElementById('userInfo');
+           userInfo.innerHTML="您好";
+
+            alert('无法获取当前用户信息');
+
+
+
+        }
+        function showTitle(){
+           android.setTitle('我是白骨精');
+
+        }
+
+        function addUserInfo(info){
+            var userInfo=document.getElementById('userInfo');
+            userInfo.innerHTML=userInfo.innerHTML+"<br>"+info;
+        }
+
+      </script>
+
+        <h1> User Info</h1>
+        <button title="获取用户信息" onclick="showInfo()">
+            <b>获取用户信息</b>
+        </button>
+      <button title="改变title" onclick="showTitle()">
+          <b>改变title</b>
+      </button>
+        <div id="userInfo">
+
+        </div>
+
+        <div id="advImg">
+            <img src="images/ms6.jpg" width="300px" height="200px"/>
+        </div>
+
+    </body>
+
+</html>

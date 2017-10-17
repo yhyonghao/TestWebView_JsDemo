@@ -1,0 +1,1097 @@
+
+ <!DOCTYPE HTML>
+<html  class="win" >
+  <head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="data-spm" content="a219a" />
+<title>蚂蚁金服开放平台 - 文档中心</title>
+<link rel="icon" href="https://zos.alipayobjects.com/rmsportal/nDgBIDOgapQuIrT.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://zos.alipayobjects.com/rmsportal/nDgBIDOgapQuIrT.ico" type="image/x-icon" />
+<link charset="utf-8" rel="stylesheet" href="https://a.alipayobjects.com/jui/2.1.3/jui.css" media="all">
+<script src="//g.alicdn.com/sj/bunting/0.8.0/js/libs/jquery/jquery.js"></script>
+<script src="//g.alicdn.com/sj/dpl/1.4.3/js/sui.min.js"></script>
+<link rel="stylesheet" href="//g.alicdn.com/sj/dpl/1.4.3/css/sui.min.css"/>
+<link charset="utf-8" rel="stylesheet" href="https://a.alipayobjects.com/openhome/base/1.0.8/base.css"  media="all"> 
+
+	<style type="text/css">
+    .block-wireless-form{margin-top:20px !important;}
+    .block-docs-wrap .docs-right .doc-detail-bd table{table-layout:auto !important;}
+.top-bar .search-wrap .search input::-webkit-input-placeholder,.top-blue-bar .search-wrap .search input::-webkit-input-placeholder,.top-bar .search-wrap .search input::-moz-placeholder,.top-blue-bar .search-wrap .search input::-moz-placeholder{color:#666 !important;}
+.top-bar .search-wrap .search input::-webkit-input-placeholder{color:#666 !important;}
+.top-bar .search-wrap .search input:not(s), .top-blue-bar .search-wrap .search input:not(s){background-color:#fff;opacity:1;color:#999;}
+.top-bar .search-wrap .search i.iconfont,.top-blue-bar .search-wrap .search i.iconfont{color:#0089cd;}
+html body{-webkit-font-smoothing: auto;}
+.top-blue-bar,.wrap .top-bar{background-color:#01aaef !important;}
+.page-title{margin-bottom: 2px;border-bottom: 0 solid #dadadc;}.page-subtitle{margin-bottom: 48px;}
+.nav-leftBorder{position: relative;}
+    .nav-leftBorder:after{content:"";width: 1px;height: 19px;background: #d3d3d3;position: absolute;top: 25px;left: 0;}
+    .page{padding-bottom: 20px;}
+
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+     <style>
+  	.alipay-doc-container{
+    	width: 1200px;
+        margin: auto;
+        margin-top: 12px;
+        background-color: #fff;
+        margin-bottom: 32px;
+        position: relative;
+     }
+     body{background-color: #e7e8eb !important;}
+     .alipay-doc-search{background-color: #e7e8eb;color:#1a1a1a;overflow:hidden;width:100%;height:72px;}
+     .alipay-doc-search-text{width:167px;text-align:left;margin-right:55px;font-size:22px;float:left;margin-top: 13px;}
+     .alipay-doc-search-input{float:right;margin-top:18px;}
+     .alipay-doc-search-input input{width:242px;height:28px;line-height:22px;font-size:14px;color:#666;margin-bottom: 12px;background-position: 640px center;border-radius: 4px;}
+     .alipay-doc-search-input input::-webkit-input-placeholder{font-size:14px !important;}
+     .alipay-doc-search-input p {font-size:14px;display:none;}
+     .alipay-doc-search-input a {color:#1a1a1a;}
+     .top-bar,.top-blue-bar{display:none !important;}
+          @media screen and (max-width: 1240px){
+		.wrap-inner {width: 1200px;}
+     }
+     
+     .block-docs-wrap .docs-left ul.menu-1 {
+        text-indent: 20px !important;
+      }
+      
+     .wrap-inner.block-docs-wrap{font-size: 0; padding-top: 0 !important; width:1200px !important;}
+     .block-docs-wrap .docs-left ul.menu-1 li a{padding: 8px 10px !important;}
+     .block-docs-wrap .docs-right{padding-left: 40px; padding-top: 40px; margin-left: -1px !important; margin-bottom:0  !important;padding-bottom: 40px;    border-left: 1px solid #e7e7eb; font-size: 14px;}
+     .block-docs-wrap .docs-left {background-color:#fff !important; border-right: 1px solid #e7e7eb;}
+     
+     .menu-1{padding:0 !important;}
+     .menu-1>li{border-bottom: 1px solid #e7e7eb; padding:0px 0;}
+     .block-docs-wrap .docs-left ul.menu-1{padding:0;}
+     .block-docs-wrap .docs-left ul.menu-1 li a.J_ExpTrigger{background-image:url(https://zos.alipayobjects.com/rmsportal/QXUvPqksyqpgDAM.png) !important;background-position: 190px 18px !important; background-repeat: no-repeat; background-size: 8px 5px!important;}
+     .block-docs-wrap .docs-left ul.menu-1>li>a{font-size:14px !important; padding: 8px 10px !important;}
+     .menu-1>li>a:focus{color:inherit;}
+     .block-docs-wrap .docs-left ul.menu-2>li>a{padding: 8px 12px !important; margin-top: 0px;}
+     
+     .menu-2 a{color:#808080; font-size: 14px !important;}
+     .block-docs-wrap .docs-left ul li a:hover{background-color: #F5F6F6 !important; color: #808080 !important;}
+     .block-docs-wrap .docs-left ul.menu-1>li>a:hover{color: #333 !important;}
+     #J_SearchBtn{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        background-image: url(https://zos.alipayobjects.com/rmsportal/PYOoxQLXEsEmdIM.png);
+        background-size: 16px 16px;
+        background-repeat: no-repeat; 
+     }
+     #search-form{position: relative;}
+     #J_SearchBtn:hover{background-image:url(https://zos.alipayobjects.com/rmsportal/mTZythdmkTJQYEB.png);}
+     .block-docs-wrap .docs-left ul.menu-1 li ul.menu-2{text-indent:25px !important;}
+     .block-docs-wrap .docs-left ul.menu-1 li ul.menu-3{text-indent:45px !important;}
+     .block-docs-wrap .docs-left .menu-title{padding-top: 35px !important; font-size: 16px !important; color: #808080; font-size: 20px !important;display:none;}
+     .go-back{position: absolute !important;}
+     .block-docs-wrap .docs-right{min-height: 700px !important;}
+ 
+     #J_SearchKeyword:-webkit-autofill{background-color:#fff !important;box-shadow: inset 0 0 0 1000px #fff; */
+    -moz-box-shadow: inset 0 0 0 1000px #fff;
+     -webkit-box-shadow: inset 0 0 0 1000px #fff; }
+     #J_SearchKeyword:focus, #J_SearchKeyword:hover{border-color:#108ee9;}
+     .block-docs-wrap .docs-left{padding-bottom: 50px; margin-bottom:0 !important;}
+     .block-docs-wrap .docs-left ul.menu-1 li ul.menu-4{text-indent:65px !important;}
+     .api .block-docs-wrap .docs-left ul.menu-1 li a.act, .block-docs-wrap .docs-left ul.menu-1 li a.act{background-color: #fff !important;
+    color: #108ee9 !important;
+    border-right: 2px solid #108ee9}
+   
+     .block-docs-wrap .docs-left ul.menu-1 li a.open.act, .block-docs-wrap .docs-left ul.menu-1 li a.J_ExpTrigger.open:hover, .block-docs-wrap .docs-left ul.menu-1 li a.J_ExpTrigger.open.act, .block-docs-wrap .docs-left ul.menu-1 li a.J_ExpTrigger.open{background-image:url(https://zos.alipayobjects.com/rmsportal/FlmUMyIfXKhQjcP.png)!important;background-repeat: no-repeat!important;}
+
+     
+          .api .block-docs-wrap .docs-left ul.menu-1 li a.open.act{background-image:none !important;background-position: 200px 22px !important; background-repeat: no-repeat;}
+     .api .menu-1>li>a{font-size:12px !important;}
+     .api .menu-1>li{border-bottom: none; padding:2px 0;}
+     .api .block-docs-wrap .docs-left ul.menu-1{padding: 10px 0 !important;}
+     .narrow ul.menu-1>li>a{font-size:14px !important;}
+          .support-detail-bd p{word-wrap: break-word;}
+  </style>
+      </head>
+  <body data-spm="7629140" id="1" class=""><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&asid=AAB81WRYpH3TpgpmIHA=",id="tb-beacon-aplus",src=(location>"https"?"//s":"//a")+".tbcdn.cn/s/aplus_v2.js")
+</script>
+
+    
+  <!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:START --><!--本文件维护了头部导航栏： 包括logo，导航栏-->
+<style>
+  .fn-arrow:after {
+    content: "";
+    background: url(https://zos.alipayobjects.com/rmsportal/PkNfEvgvsfgdlDX.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    width: 10px;
+    height: 5px;
+    display: inline-block;
+  }
+
+  .fn-arrow.active:after{
+    background-image: url(https://zos.alipayobjects.com/rmsportal/xwkHInEEorhkKEP.png);
+  }
+
+  .site-header {
+    background: #fff;
+    color: #242735;
+  }
+
+  .menu-area{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+  }
+
+  .antLogo {
+    float: left;
+  }
+
+  .antLogoImg {
+    width: 219px;
+    height: 58px;
+  }
+
+  .nav-menu {
+    margin-left: 220px;
+    line-height: 67px;
+    text-align: right;
+  }
+
+  .nav-memu ul {
+    display: inline-block;
+  }
+
+  .nav-menu .menu-item {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+  }
+
+  .nav-menu .menu-item > div{
+    padding: 0 20px;
+  }
+
+  .menu-item.has-divider {
+    position: relative;
+  }
+
+  .menu-item.has-divider:before{
+    position: absolute;
+    left: -1px;
+    top: 24px; /* =(68- 20)/2 */
+    height: 20px;
+    content: '';
+    border-left: 1px solid #D3D3D3;
+  }
+
+  .nav-menu .menu-item.selected{
+    border-bottom: 2px solid #108EE9;
+  }
+
+  .nav-menu .menu-item.selected a {
+    color: #108EE9;
+  }
+
+  .nav-menu a{
+    font-family: tahoma, arial, "Hiragino Sans GB", "Microsoft Yahei", "\5b8b\4f53" !important;
+    color: #1A1A1A;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav-menu a:hover{
+    color:#108EE9;
+    text-decoration: none;
+  }
+
+  .nav-menu .menu-popup {
+    display: none;
+    position: absolute;
+    overflow: visible;
+    z-index: 111111;
+    min-width: 120px;
+    text-align: left;
+    margin-left: -55px;
+    padding-top: 3px;
+  }
+
+.nav-menu .menu-popup:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #e6e7ec;
+    border-right: 10px solid transparent;
+    border-top: 0;
+  }
+
+  .nav-menu .menu-popup:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-top: 0;
+  }
+
+  .nav-menu .submenu {
+    white-space: nowrap;
+    border: 1px solid #e6e7ec;
+    border-bottom: none;
+  }
+
+  .nav-menu .submenu-item{
+    background: #fff;
+    line-height: 40px;
+    padding: 0 20px;    
+  }
+
+  .hotline {
+    line-height: 1.8;
+    background: #fff;
+    padding: 0 20px 15px;
+    white-space: nowrap;
+    text-align: left;
+    border: 1px solid #e6e7ec;
+    border-top: none;
+  }
+
+  .hotline:before{
+    display: block;
+    content: "";
+    border-top: 1px solid #e6e7ec;
+    width: 100%;
+    height: 1px;
+  }
+
+  .hotline h3{
+    font-family: tahoma, arial, "Hiragino Sans GB", "Microsoft Yahei", "\5b8b\4f53" !important;
+    margin: 10px 0 4px;
+    color: #8F8F8F;
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hotline p{
+    font-family: tahoma, arial, "Hiragino Sans GB", "Microsoft Yahei", "\5b8b\4f53" !important;
+    font-size: 16px;
+    color: #8F8F8F;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav-title {
+    font-family: tahoma, arial, "Hiragino Sans GB", "Microsoft Yahei", "\5b8b\4f53" !important;
+    position: absolute;
+    left: 240px;
+    bottom: 24px;
+    color: #1A1A1A;
+    font-size: 18px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .nav-menu .menu-item > .last-menu {
+    padding-right: 0;
+  }
+</style>
+
+
+<!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:5622:theme/main/headerCompact.schema:简化版导航栏配置--只有返回首页和其他菜单:START -->
+<!-- start compact head -->
+<div class="site-header">
+  <div class="menu-area ">
+    <div class="antLogo">
+      <a seed="SEED_HEADER_LOGO" id="J_home_logo_link"  href="https://openhome.alipay.com/platform/home.htm">
+        <img class="antLogoImg" src="https://zos.alipayobjects.com/rmsportal/roCFucDzSlyeqAD.png" />
+      </a>
+    </div>
+        <h1 id="J_mainTitle" class="nav-title">文档中心</h1>
+    
+    <script>
+      var __getQuery = function() {
+        var match;
+        var urlParams = {};
+        var pl = /\+/g;  // Regex for replacing addition symbol with a space
+        var search = /([^&=]+)=?([^&]*)/g;
+        var decode = function(s) {
+          return decodeURIComponent(s.replace(pl, ' '));
+        };
+        var query = decodeURI(window.location.search.substring(1));
+
+        // eslint-disable-next-line no-cond-assign
+        while (match = search.exec(query)) {
+          urlParams[decode(match[1])] = decode(match[2]);
+        }
+
+        return urlParams;
+      };
+      
+      try{
+        var treeId= __getQuery().treeId;
+        if(treeId == '300'){
+          document.getElementById('J_mainTitle').innerHTML = '合作攻略';
+        } else if(treeId == '182'){
+          document.getElementById('J_mainTitle').innerHTML = '规则中心';
+        }
+      }catch(e){
+        //do nothing
+      }
+    </script>
+        
+    
+    <div class="nav-menu">
+      <ul>
+          <li class="menu-item">
+            <div>
+              <a class="SEED_HEADER_NAV_BACK_TO_HOME" class="back-to-home" id="J_home_link" href="https://openhome.alipay.com/platform/manageHome.htm">进入管理中心</a>
+            </div>
+          </li>
+          <li class="menu-item has-divider">
+            <div class="fn-arrow has-submenu last-menu">
+              <a seed="SEED_HEADER_NAV_LAST_MENU" href="javascript:void(0)">帮助支持</a>
+              <div class="menu-popup">
+                <ul class="submenu">
+                                        <li class="submenu-item ">
+                      <div>
+                        <a seed="SEED_HEADER_NAV_SUPPORT_PAGE" href="https://support.open.alipay.com/alipay/support/index.htm" target="_blank">支持中心</a>
+                      </div>
+                    </li>
+                                        <li class="submenu-item ">
+                      <div>
+                        <a seed="SEED_HEADER_NAV_ASK_QUESTION"  href="https://cschannel.alipay.com/newPortal.htm?scene=mysjbzzx"  target="_blank">在线咨询</a>
+                      </div>
+                    </li>
+                  
+                </ul>
+                <div class="hotline">
+                  <!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:5620:theme/clientHelp.schema:客服专线配置:START -->
+                  <h3>客服电话</h3>
+                  <p>0571-88158090</p>
+                  <p style="line-height: 1;font-size: 12px;">服务时间：周一至周日 8:00-24:00</p>
+                  <!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:5620:theme/clientHelp.schema:客服专线配置:END -->
+                </div>
+              </div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- end compact head -->
+<!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:5622:theme/main/headerCompact.schema:简化版导航栏配置--只有返回首页和其他菜单:END -->
+
+<!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:5623:theme/main/headerHome.schema:首页版本导航栏配置:END -->
+<script>
+  // 为了避免后面取不到$, 这里先赋值出来
+  var $ = jQuery;
+
+  // 选中春雨计划菜单
+  // 假如当前页面有春雨计划的id，那么断定当前页面是春雨计划
+  if($('#SpringRainUnscramble').length){
+    $('.nav-menu .menu-item').each(function(idx, item){
+      // springRain定义在schema里面，要保持一致
+      if($(item).data('value') === 'springRain'){
+        $(item).addClass('selected');
+      }
+    });
+  }
+
+  // 子菜单hover效果
+  $('.has-submenu').hover(function(){
+    var menuPopup = $(this).addClass('active').find('.menu-popup');
+    var marginLeft = (menuPopup.outerWidth() - $(this).width() + 20)/2;
+    
+    menuPopup.css({
+      marginLeft: -marginLeft
+    }).stop(true, true).fadeIn(200);
+  }, function(){
+    $(this).removeClass('active').find('.menu-popup').stop(true, true).fadeOut(200);
+  });
+
+  // 处理返回首页的逻辑
+  /*
+  var linkBeforeLogin = "https://open.alipay.com/platform/home.htm";
+  var linkAfterLogin =  "https://open.alipay.com/platform/manageHome.htm";
+  $('#J_home_link, #J_home_logo_link').on('click', function(){
+    jQuery.ajax({
+      url: 'https://open.alipay.com/sessionCheck.json',
+      dataType:'jsonp',
+      jsonp: '_callback',
+      cache:!1,
+      success: function(e){
+        // 只有认证成功才去登入后页面
+        window.location.href = e && e.stat == 'ok' ? linkAfterLogin : linkBeforeLogin;
+      },
+      error:function(e,t,n){
+        window.location.href = linkAfterLogin; //出错让用户回去认证
+      }
+    });
+  });
+  */
+</script><!-- FD:1397:openhome-fengdie-portal/theme/main/header.vm:END -->
+        <div class="doc-bread" style="width:1200px; margin:auto; padding-top: 12px;display:none; ">
+        	<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105304&docType=1" style="color: #108ee9;">文档中心</a> > App支付
+        </div>
+    <div class="bread"></div>
+    <div class="alipay-doc-container">
+       <div class="alipay-doc-search">
+         <div class="alipay-doc-search-text">
+                                      
+                                                         
+ 
+         </div>
+         <div class="alipay-doc-search-input">
+           <div>
+           <form action="/doc2/docSearch" method="GET" id="search-form">
+              <input type="text" class="jui-input J_SearchKeyword J_SearchIpt" id="J_SearchKeyword" 	   value="" name="keyword" placeholder="输入关键词搜索">
+             <div id="J_SearchBtn" class="J_SearchBtn"></div>
+           </form>
+           </div>
+           <p>
+               热搜关键词：
+                                         <a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105072&docType=1">支付能力
+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105192&docType=1">口碑开店</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=105310&docType=1">PID及密钥查看</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://doc.open.alipay.com/doc2/detail?treeId=193&articleId=105311&docType=1">调试API</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&articleId=103419&docType=1">资源下载</a>
+                                                                              </p>
+         </div>
+      </div>
+        
+<link rel="stylesheet" href="//g.alicdn.com/shop/jae-platform/0.0.10/stylesheet/doc-min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="//g.alicdn.com/shop/tae-portal/0.4.2/styles/docs-detail-v2.css">
+<style>
+    @font-face {
+        font-family: "iconfont1";
+        src: url("//at.alicdn.com/t/font_1448507037_6084561.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1448507037_6084561.woff") format("woff"), url("//at.alicdn.com/t/font_1448507037_6084561.ttf") format("truetype"), url("//at.alicdn.com/t/font_1448507037_6084561.svg#iconfont") format("svg");
+    }
+    .iconfont {
+        font-family: "iconfont1" !important;
+        font-size: 16px;
+        font-style: normal;
+    }
+    #pages {
+        min-height: 700px;
+    }
+    .wrap {
+        width: 100%;
+    }
+    .wrap-inner {
+        margin: 0 auto;
+        width: 990px;
+    }
+	.block-docs-search-list .list-wrap ul li h2 a em {
+    	/*搜索标题，字体标红*/
+    	color: red;
+    }
+	.wrap .block-docs-search-list .list-wrap ul li .desc em {
+        /*搜索内容，字体标红*/
+		color: red;
+    }
+</style>
+
+<script src="//g.alicdn.com/tb/tracker/1.0.13/index.js"></script>
+<script src="//g.alicdn.com/kissy/k/1.4.4/seed-min.js" data-config="{combine:false}"></script>
+<script src="//g.alicdn.com/shop/tae-portal/0.4.2/scripts/lib/underscore-min.js"></script>
+
+<script>
+    window.TAE_CFG = {
+        userNick : 'taeTestNick',
+        api : {
+            zanCode: '/doc2/youyong'
+        }
+    };
+    KISSY.config('packages',{
+        'module':{
+            debug:true,
+            base:'//g.alicdn.com/shop/tae-portal/0.4.2/scripts/'
+        }
+    });
+
+</script>
+
+
+
+
+
+
+
+<div class="menu-overlay-mask J_menuMask"></div>
+
+<div id="pages">
+    <div class="wrap" id="detailContainer">
+    	        <div class="top-bar" >
+            <div class="wrap-inner">
+            	                <div class="crumbs">
+					<a href="//doc.open.alipay.com/doc2/alipayDocIndex.htm">
+						                            文档中心
+											</a> > App支付
+                </div>
+
+                <div class="search-wrap">
+                    <div class="search">
+                        <form action="/doc2/docSearch" name="search-form" id="search-form" target="_blank">
+                            <input placeholder="资料库/API搜索" value="" name="keyword" class="ipt-text J_SearchIpt" autocomplete="off" disableautocomplete >
+                            <input type="hidden" name="searchType" value="1" />
+                            <input type="hidden" name="treeId" value="204" />
+                            <i class="iconfont J_SearchBtn">&#xe69b;</i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                 <!--E 顶部蓝条 -->
+        <div class="wrap-inner block-docs-wrap J_FloatContainer">
+            <div class="docs-left" id="sideMenu">
+                            <h3 class="menu-title">App支付</h3>
+					    <ul class="menu-1">
+                                	    						<li><a  title="产品介绍" href="/docs/doc.htm?treeId=204&amp;articleId=105051&docType=1" >产品介绍</a></li>
+                                                                	    						<li><a  title="接入指引" href="/docs/doc.htm?treeId=204&amp;articleId=106079&docType=1" >接入指引</a></li>
+                                                                	    						<li><a  class="act"  title="快速接入" href="/docs/doc.htm?treeId=204&amp;articleId=105297&docType=1" >快速接入</a></li>
+                                                                	    						<li><a  title="iOS集成流程详解" href="/docs/doc.htm?treeId=204&amp;articleId=105295&docType=1" >iOS集成流程详解</a></li>
+                                                                	    						<li><a  title="Android集成流程详解" href="/docs/doc.htm?treeId=204&amp;articleId=105296&docType=1" >Android集成流程详解</a></li>
+                                                                	    						<li><a  title="iOS调用说明" href="/docs/doc.htm?treeId=204&amp;articleId=105299&docType=1" >iOS调用说明</a></li>
+                                                                	    						<li><a  title="Android调用说明" href="/docs/doc.htm?treeId=204&amp;articleId=105300&docType=1" >Android调用说明</a></li>
+                                                                	    						<li><a  title="其他接入方式" href="/docs/doc.htm?treeId=204&amp;articleId=105695&docType=1" >其他接入方式</a></li>
+                                                                	    						<li><a  title="申请支付请求参数说明" href="/docs/doc.htm?treeId=204&amp;articleId=105465&docType=1" >申请支付请求参数说明</a></li>
+                                                                	    						<li><a  title="客户端同步返回" href="/docs/doc.htm?treeId=204&amp;articleId=105302&docType=1" >客户端同步返回</a></li>
+                                                                	    						<li><a  title="支付结果异步通知" href="/docs/doc.htm?treeId=204&amp;articleId=105301&docType=1" >支付结果异步通知</a></li>
+                                                                	    						<li><a  title="交易操作接口" href="/docs/doc.htm?treeId=204&amp;articleId=105303&docType=1" >交易操作接口</a></li>
+                                                                	    						<li><a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=54&amp;articleId=104509&amp;docType=1" title="SDK下载" target="_blank">SDK下载</a></li>
+                                                                	    						<li><a href="http://design.alipay.com/resource" title="LOGO文件下载" target="_blank">LOGO文件下载</a></li>
+                                                                	    						<li><a  title="常见问题" href="/docs/doc.htm?treeId=204&amp;articleId=105849&docType=1" >常见问题</a></li>
+                                            </ul>
+			            </div>
+            <!--E 左侧边栏 -->
+            <div class="docs-right">
+				<!-- content -->
+									
+
+                <div class="mtl">
+                    <h2 class="mtl-main">App支付快速接入</h2>
+
+                    <div class="update-access-wrap">
+                        <span class="update-time">更新时间：2016/11/30</span>
+                        <span class="access-times">访问次数：61141</span>
+                    </div>
+
+                    <div class="mao-list">
+                        <div class="inner" id="maoList">
+								<ul class="mao-one"> 
+ <li class="mao-one-li current"><a href="#s0" title="第一步：创建应用并获取APPID">第一步：创建应用并获取APPID</a></li> 
+ <li class="mao-one-li"><a href="#s1" title="第二步：配置密钥">第二步：配置密钥</a></li> 
+ <li class="mao-one-li"><a href="#s2" title="第三步：集成并配置SDK">第三步：集成并配置SDK</a></li> 
+ <li class="mao-one-li"><a href="#s3" title="第四步：调用接口">第四步：调用接口</a></li> 
+ <li class="mao-one-li"><a href="#s4" title="关于沙箱">关于沙箱</a></li> 
+</ul>
+								<div class="mao-s-h J_maoTrigger"><i class="iconfont icon-s">&#xe693;</i><i class="iconfont icon-h">&#xe692;</i></div>
+                        </div>
+                    </div>
+                    <!--E 锚点列表 -->
+                </div>
+                
+                <div class="doc-detail-bd" id="bd">
+						<p>本文档展示了如何从零开始，使用蚂蚁金服开放平台服务端SDK快速接入App支付产品，完成与支付宝对接的部分。</p> 
+<p><strong>注意：</strong> 文档中的代码示例和<a href="http://doc.open.alipay.com/doc2/detail.htm?treeId=54&amp;articleId=104509&amp;docType=1" target="_blank">Demo</a>是用来阐述API基本使用方法的，仅针对大众场景。供ISV参考，特殊情况还请ISV自行扩展，确保符合自身业务需求。</p> 
+<strong style="background:yellow">支付产品全面升级，若您使用的是老接口，请移步<a href="http://doc.open.alipay.com/doc2/detail?treeId=59&amp;articleId=103563&amp;docType=1" target="_blank">老版本移动支付文档</a>。</strong> 
+<h1 id="s0">第一步：创建应用并获取APPID</h1> 
+<p>要在您的应用中使用支付宝开放产品的接口能力，您需要先去蚂蚁金服开放平台（<a href="https://open.alipay.com/" target="_blank">open.alipay.com</a>），在管理中心中创建登记您的应用，并提交审核，审核通过后会为您生成应用唯一标识（<font color="#993300"><strong>APPID</strong></font>），并且可以申请开通开放产品使用权限，通过APPID您的应用才能调用开放产品的接口能力。需要详细了解开放平台创建应用步骤请参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=200&amp;articleId=105308&amp;docType=1" target="_blank">《开放平台应用创建指南》</a>。</p> 
+<h1 id="s1">第二步：配置密钥</h1> 
+<p>开发者调用接口前需要先生成RSA密钥，RSA密钥包含应用私钥(APP_PRIVATE_KEY)、应用公钥(APP_PUBLIC_KEY）。生成密钥后在开放平台管理中心进行密钥配置，配置完成后可以获取支付宝公钥(ALIPAY_PUBLIC_KEY)。详细步骤请参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=200&amp;articleId=105310&amp;docType=1" target="_blank">《配置应用环境》</a>。</p> 
+<h1 id="s2">第三步：集成并配置SDK</h1> 
+<p>接入移动支付需要集成两个SDK，客户端SDK需要集成在商户自己的APP中，用于唤起支付宝APP并发送交易数据，并在支付宝APP返回商户APP时获得支付结果。服务端SDK需要商户集成在自己的服务端系统中，用于协助解析并验证客户端同步返回的支付结果和异步通知。</p> 
+<h2>如何集成客户端SDK</h2> 
+<p>点击查看<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=204&amp;articleId=105295&amp;docType=1" target="_blank">iOS集成流程详解</a>，<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=204&amp;articleId=105296&amp;docType=1" target="_blank">Android集成流程详解</a>。</p> 
+<h2>如何集成服务端SDK</h2> 
+<p>为了帮助开发者调用开放接口，我们提供了<a href="https://doc.open.alipay.com/doc2/detail?treeId=54&amp;articleId=103419&amp;docType=1" target="_blank">开放平台服务端SDK</a>，包含JAVA、PHP和.NET三语言版本，封装了签名&amp;验签、HTTP接口请求等基础功能。请先下载对应语言版本的SDK并引入您的开发工程。</p> 
+<p>在使用SDK调用具体API前，需要先配置通用接入参数：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>APP_ID</td> 
+   <td>开放平台应用的APPID，详见<a href="#s0">创建应用并获取APPID</a></td> 
+  </tr> 
+  <tr> 
+   <td>APP_PRIVATE_KEY</td> 
+   <td>开发者应用私钥，详见<a href="#s1">配置密钥</a></td> 
+  </tr> 
+  <tr> 
+   <td>CHARSET</td> 
+   <td>请求和签名使用的字符编码格式，支持GBK和UTF-8</td> 
+  </tr> 
+  <tr> 
+   <td>ALIPAY_PUBLIC_KEY</td> 
+   <td>支付宝公钥，详见<a href="#s1">配置密钥</a></td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>然后，使用上述接入参数初始化AlipayClient(安装java模式示例)：</p> 
+<pre>AlipayClient alipayClient = new DefaultAlipayClient(&quot;https://openapi.alipay.com/gateway.do&quot;,APP_ID,APP_PRIVATE_KEY,&quot;json&quot;,CHARSET,ALIPAY_PUBLIC_KEY);</pre> 
+<p>接下来，就可以用alipayClient来调用具体的API了。alipayClient只需要初始化一次，后续调用不同的API都可以使用同一个alipayClient对象。</p> 
+<div style="padding: 8px; background: #FFF7B2; border: solid 1px #c3c3c3; color: #6d412c;"> 
+ <span style="color: #333333;"><strong>TIPS：</strong></span>App支付不支持第三方授权，不能代商家发起请求。 
+</div> 
+<h1 id="s3">第四步：调用接口</h1> 
+<p>系统交互流程：<br /><img src="//img.alicdn.com/top/i1/LB1d7GlMVXXXXbTXFXXXXXXXXXX" alt="image" /></p> 
+<p>如图，以Android平台为例：<br />第4步：调用支付接口：此消息就是本接口所描述的支付宝客户端SDK提供的支付对象PayTask，将商户签名后的订单信息传进payv2方法唤起支付宝收银台，交易数据格式具体参见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=204&amp;articleId=105465&amp;docType=1" target="_blank">请求参数说明</a>。<br />第5步：支付请求：支付宝客户端SDK将会按照商户客户端提供的请求参数发送支付请求。<br />第8步：接口返回支付结果：商户客户端在第4步中调用的支付接口，会返回最终的支付结果（即同步通知），参见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=204&amp;articleId=105302&amp;docType=1" target="_blank">客户端同步返回</a>。<br />第13步：用户在支付宝APP或H5收银台完成支付后，会根据商户在手机网站支付API中传入的前台回跳地址return_url自动跳转回商户页面，同时在URL请求中附带上支付结果参数。同时，支付宝还会根据原始支付API中传入的异步通知地址notify_url，通过POST请求的形式将支付结果作为参数通知到商户系统，详情见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=204&amp;articleId=105301&amp;docType=1" target="_blank">支付结果异步通知</a>。</p> 
+<p>除了正向支付流程外，支付宝也提供交易查询、关闭、退款、退款查询以及对账等配套API。</p> 
+<strong>特别注意：</strong> 
+<ul> 
+ <li> <strong style="background:red">构造交易数据并签名必须在商户服务端完成，商户的应用私钥绝对不能保存在商户APP客户端中，也不能从服务端下发。</strong></li> 
+ <li> <strong>同步返回的数据，只是一个简单的结果通知，商户确定该笔交易付款是否成功需要依赖服务端收到支付宝异步通知的结果进行判断。</strong></li> 
+ <li> <strong>商户系统接收到通知以后，必须通过验签（验证通知中的sign参数）来确保支付通知是由支付宝发送的。建议使用支付宝提供的SDK来完成，详细验签规则参考<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=193&amp;articleId=105301&amp;docType=1#s6" target="_blank">异步通知验签</a>。</strong></li> 
+</ul> 
+<h2>使用SDK快速接入</h2> 
+<p>App支付API必须通过支付宝提供的移动端SDK来调用，点击查看<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.PkH9Ue&amp;treeId=204&amp;articleId=105299&amp;docType=1" target="_blank">iOS调用说明</a>，<a href="https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.TE79vI&amp;treeId=204&amp;articleId=105300&amp;docType=1" target="_blank">Android调用说明</a>。</p> 
+<h2>交易操作</h2> 
+<p>1.交易查询接口alipay.trade.query：</p> 
+<pre>AlipayClient alipayClient = .... //获得初始化的AlipayClient
+AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();//创建API对应的request类
+request.setBizContent(&quot;{
+    &quot;out_trade_no&quot;:&quot;20150320010101001&quot;,
+    &quot;trade_no&quot;:&quot;2014112611001004680073956707&quot;
+  }&quot;);//设置业务参数
+AlipayTradeQueryResponse response = alipayClient.execute(request);//通过alipayClient调用API，获得对应的response类
+// TODO 根据response中的结果继续业务逻辑处理</pre> 
+<p>关键入参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>out_trade_no</td> 
+   <td>支付时传入的商户订单号，与trade_no必填一个</td> 
+  </tr> 
+  <tr> 
+   <td>trade_no</td> 
+   <td>支付时返回的支付宝交易号，与out_trade_no必填一个</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>关键出参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>trade_no</td> 
+   <td>支付宝28位交易号</td> 
+  </tr> 
+  <tr> 
+   <td>out_trade_no</td> 
+   <td>支付时传入的商户订单号</td> 
+  </tr> 
+  <tr> 
+   <td>trade_status</td> 
+   <td>交易当前状态</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>2.交易退款接口alipay.trade.refund：</p> 
+<pre>AlipayClient alipayClient = .... //获得初始化的AlipayClient
+AlipayTradeRefundRequest request = new AlipayTradeRefundRequest();//创建API对应的request类
+request.setBizContent(&quot;{
+    &quot;out_trade_no&quot;:&quot;20150320010101001&quot;,
+    &quot;trade_no&quot;:&quot;2014112611001004680073956707&quot;
+    &quot;out_request_no&quot;:&quot;1000001&quot;
+    &quot;refund_amount&quot;:&quot;1&quot;
+  }&quot;);//设置业务参数
+AlipayTradeRefundResponse response = alipayClient.execute(request);//通过alipayClient调用API，获得对应的response类
+// TODO 根据response中的结果继续业务逻辑处理</pre> 
+<p>关键入参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>out_trade_no</td> 
+   <td>支付时传入的商户订单号，与trade_no必填一个</td> 
+  </tr> 
+  <tr> 
+   <td>trade_no</td> 
+   <td>支付时返回的支付宝交易号，与out_trade_no必填一个</td> 
+  </tr> 
+  <tr> 
+   <td>out_request_no</td> 
+   <td>本次退款请求流水号，部分退款时必传</td> 
+  </tr> 
+  <tr> 
+   <td>refund_amount</td> 
+   <td>本次退款金额</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>关键出参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>refund_fee</td> 
+   <td>该笔交易已退款的总金额</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>3.查询对账单下载地址接口alipay.data.dataservice.bill.downloadurl.query：</p> 
+<pre>AlipayClient alipayClient = new DefaultAlipayClient(&quot;https://openapi.alipay.com/gateway.do&quot;,&quot;app_id&quot;,&quot;your private_key&quot;,&quot;json&quot;,&quot;GBK&quot;,&quot;alipay_public_key&quot;);
+AlipayDataDataserviceBillDownloadurlQueryRequest request = new AlipayDataDataserviceBillDownloadurlQueryRequest();//创建API对应的request类
+request.setBizContent(&quot;{
+    &quot;bill_type&quot;:&quot;trade&quot;,
+    &quot;bill_date&quot;:&quot;2016-04-05&quot;
+  }&quot;);//设置业务参数
+AlipayDataDataserviceBillDownloadurlQueryResponse response = alipayClient.execute(request);
+// TODO 根据response中的结果继续业务逻辑处理</pre> 
+<p>关键入参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>bill_type</td> 
+   <td>固定传入trade</td> 
+  </tr> 
+  <tr> 
+   <td>bill_date</td> 
+   <td>需要下载的账单日期，最晚是当期日期的前一天</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>关键出参：</p> 
+<table> 
+ <thead> 
+  <tr> 
+   <th>参数名称</th> 
+   <th>参数说明</th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td>bill_download_url</td> 
+   <td>账单文件下载地址，30秒有效</td> 
+  </tr> 
+ </tbody> 
+</table> 
+<p>下载账单文件：</p> 
+<pre>//将接口返回的对账单下载地址传入urlStr
+String urlStr = &quot;http://dwbillcenter.alipay.com/downloadBillFile.resource?bizType=X&amp;userId=X&amp;fileType=X&amp;bizDates=X&amp;downloadFileName=X&amp;fileId=X&quot;;
+//指定希望保存的文件路径
+String filePath = &quot;/Users/fund_bill_20160405.csv&quot;;
+URL url = null;
+HttpURLConnection httpUrlConnection = null;
+InputStream fis = null;
+FileOutputStream fos = null;
+try {
+    url = new URL(urlStr);
+    httpUrlConnection = (HttpURLConnection) url.openConnection();
+    httpUrlConnection.setConnectTimeout(5 * 1000);
+    httpUrlConnection.setDoInput(true);
+    httpUrlConnection.setDoOutput(true);
+    httpUrlConnection.setUseCaches(false);
+    httpUrlConnection.setRequestMethod(&quot;GET&quot;);
+    httpUrlConnection.setRequestProperty(&quot;Charsert&quot;, &quot;UTF-8&quot;);
+    httpUrlConnection.connect();
+    fis = httpUrlConnection.getInputStream();
+    byte[] temp = new byte[1024];
+    int b;
+    fos = new FileOutputStream(new File(filePath));
+    while ((b = fis.read(temp)) != -1) {
+        fos.write(temp, 0, b);
+        fos.flush();
+    }
+} catch (MalformedURLException e) {
+    e.printStackTrace();
+} catch (IOException e) {
+    e.printStackTrace();
+} finally {
+    try {
+        fis.close();
+        fos.close();
+        httpUrlConnection.disconnect();
+    } catch (NullPointerException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}</pre> 
+<h1 id="s4">关于沙箱</h1> 
+<p>如何接入沙箱</p> 
+<p>沙箱环境是开放平台提供给开发者调试接口的环境，具体操作步骤见<a href="https://doc.open.alipay.com/doc2/detail.htm?treeId=200&amp;articleId=105311&amp;docType=1" target="_blank">沙箱接入指南</a>。</p> 
+<p>App支付沙箱接入注意点</p> 
+<p>1、app支付支持沙箱接入；在沙箱调通接口后，必须在线上进行测试与验收，所有返回码及业务逻辑以线上为准；<br />2、app支付只支持余额支付，不支持银行卡、余额宝等其他支付方式；<br />3、app支付只支持Android版接入，在使用sdk时，在支付接口前调用如下方法</p> 
+<pre>EnvUtils.setEnv(EnvUtils.EnvEnum.SANDBOX);</pre> 
+<p>用于切换沙箱环境与生产环境；<br />如果不使用此方法，默认使用生产环境；<br />在钱包不存在的情况下，会唤起h5支付；<br />注：在生产环境，必须将此代码注释！</p> 
+<p>4、app支付中请使用沙箱版钱包测试：点击管理中心-沙箱环境-<a href="https://auth.alipay.com/login/ant_sso_index.htm?goto=https%3A%2F%2Fopenhome.alipay.com%2Fplatform%2FappDaily.htm%3Ftab%3Dtool" target="_blank">沙箱工具</a></p>
+						
+					<h1 id="faq">FAQ</h1>
+						                        	<dd>关于此文档暂时还没有FAQ</dd> 
+                                        </div>
+                
+                <div class="box-btm-opt">
+                    <div class="btn-wrap">
+                        <a href="javascript:;" class="btn btn-u J_zan" data-url="/doc2/youyong?articleId=105297&amp;docType=1"><i class="iconfont">&#xe691;</i>有用(<em class="J_zanNum">49</em>)</a>
+													  <a href="https://support.open.alipay.com/support/create_or_edit_problem.htm" class="btn btn-q " target="_blank">我要提问</a>
+						 					</div>
+                                   </div>
+                <!--E 右侧底部按钮和文档标签 -->
+								
+            </div>
+            <!-- 右侧主内容 -->
+        </div>
+        <!--E FAQ -->
+    </div>
+    <script src="//g.alicdn.com/shop/tae-portal/0.4.2/scripts/docs-cc-v2.js"></script>
+</div>
+
+<a href="#" class="go-back"><i class="iconfont">&#xe645;</i><span class="txt">返回<br>顶部</span></a>
+<!--E 返回顶部 -->
+
+	<div id="isLogin" style="display:none">false</div>
+    <div id="returnUrl" style="display:none"></div>
+    <div id="tbLoginUrl" style="display:none"></div>
+	<div id="fromLogin" style="display:none">false</div>
+	
+<script>
+function postMessage(iframeheight) {
+	$('#childiframe').height(parseInt(iframeheight) + 30);
+	$('#detailContainer').height(parseInt(iframeheight) + 80);
+}
+</script>
+    </div>
+  <link charset="utf-8" rel="stylesheet" href="https://a.alipayobjects.com/openhome/base/1.0.8/base.css"  media="all"> 
+<script type="text/javascript">
+$(".J_feedBack").hide();
+</script>
+<!--TMS:2013860-->
+
+<!-- FD:1397:openhome-fengdie-portal/theme/main/footer.vm:START --><style>
+  .site-footer{
+    background: #242735;
+    color: #fff;
+    padding: 30px 0 10px;
+    font-size: 12px;    
+  }
+
+  .site-footer .copyright{
+    text-align: center;
+    opacity: 0.8
+  }
+
+  .site-footer .server{
+    color: #242735;
+  }
+
+  .site-footer.complete .site-footer-links {
+    display: block;
+    padding-bottom: 2px;
+  }
+
+  .site-footer-links{
+    display: none;
+    text-align: center;
+  }
+
+  .site-footer-links li {
+    display: inline-block;
+  }
+
+  .site-footer-links a {
+    padding: 0 4px;
+    color: #fff;
+    opacity: .8;
+  }
+
+  .site-footer-links li:after {
+    content: '｜';
+    display: inline;
+  }
+
+  .site-footer-links li:last-child:after{
+    display: none;
+  }
+
+   /*左侧导航*/
+  .api .block-docs-wrap .docs-left ul.menu-1 li a.open {background-image: url(https://zos.alipayobjects.com/rmsportal/FlmUMyIfXKhQjcP.png)!important;background-repeat: no-repeat;background-position: 8px 14px;background-size: 8px 5px;}
+  .api .menu-1>li{border-bottom: 1px solid #e7e7eb;padding: 0px 0;}
+</style>
+<!-- start footer -->
+<!-- FD:1397:openhome-fengdie-portal/theme/main/footer.vm:5617:theme/main/footer.schema:底部footer配置:START -->
+<div class="site-footer complete">
+  <ul class="site-footer-links">
+    <!--
+      <li>
+        <a seed="SEED_FOOTER_LINK_ABOUT_ANT" href="http://www.antgroup.com/" target="_blank">关于蚂蚁金服</a>
+      </li>
+    
+      <li>
+        <a seed="SEED_FOOTER_LINK_HR_HIRE" href="https://job.alibaba.com" target="_blank">诚征英才</a>
+      </li>
+    
+      <li>
+        <a seed="SEED_FOOTER_LINK_CONTACT_US" href="https://www.antgroup.com/address.htm" target="_blank">联系我们</a>
+      </li>
+    
+      <li>
+        <a seed="SEED_FOOTER_LINK_OPEN_HOME" href="https://open.alipay.com" target="_blank">开放平台</a>
+      </li>
+    
+      <li>
+        <a seed="SEED_FOOTER_LINK_INTERNATIONAL"  href="https://global.alipay.com/" target="_blank">International  Business</a>
+      </li>
+    
+      <li>
+        <a seed="SEED_FOOTER_LINK_ABOUT_ALIPAY"  href="https://www.alipay.com" target="_blank">About  Alipay</a>
+      </li>
+    -->
+  </ul>
+
+  <div class="copyright">
+    Copyright @ 2016 杭州蚂蚁金服 ｜ ICP证浙B2-20160559
+    <div class="server" id="ServerNum"> isvportal010179106111.s.et2 &nbsp; </div>
+  </div>
+</div>
+<!-- FD:1397:openhome-fengdie-portal/theme/main/footer.vm:5617:theme/main/footer.schema:底部footer配置:END -->
+<!-- end footer -->
+
+<!-- FD:1397:openhome-fengdie-portal/theme/main/footer.vm:END -->
+<script>
+  $(function(){
+    $('#international').attr('href','http://global.alipay.com/ospay/home.htm');
+  });
+</script>
+<!-- 调查问卷 入口 -->
+<style type="text/css">
+a.feed-back{
+    text-align: center;
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom:45px;
+}
+.feed-back:hover{background-color: #aaa;text-decoration:none;}
+.feed-back img{
+    display: block;
+    margin: 0px auto 0;
+    padding-top:11px;
+    width: 18px;
+}
+.quiz img{
+    padding-top: 4px;
+    width: 32px;
+}
+.feed-back .txt{display: none;}
+.feed-back:hover .txt{display: block;}
+.feed-back:hover .icon{display: none;}
+.go-back .txt {margin-top:0px;padding-top:4px;}
+.go-back{position: absolute !important;}
+.go-back-fixed{position: fixed !important;}
+</style>
+
+<script type="text/javascript">
+  var url="";
+  var type ="doc";
+  var applyApi = "";
+  if(type =="doc"){
+    url = "https://asurvey.alipay.com/diaocha_370459.html";
+  }else if(type =="api"){
+    url ="https://asurvey.alipay.com/diaocha_250305.html";
+    var apiName = $('.mtl-main').text().split('(')[0];
+    //applyApi = '<a class="go-back feed-back applyApi" href="https://openhome.alipay.com/platform/applyApi.htm?apiName='+ apiName +'" target="_blank" style="margin-bottom: 45px; display: block; position: relative; bottom: 230px;"><span class="icon"><img src="https://os.alipayobjects.com/rmsportal/dNYgrRAFxagTsEP.png" style="width: 20px;padding-top: 5px;"></span><span class="txt">我要<br>申请</span></a>';
+  }
+ if(jQuery(".go-back").size()>0 && (type == "doc" || type=="api")){
+ 	
+ 	jQuery(applyApi+'<a class="go-back feed-back quiz" href="https://support.open.alipay.com/support/create_or_edit_problem.htm" target="_blank"><span class="icon"><img src="https://os.alipayobjects.com/rmsportal/QpNaHATCWKEpLQd.png"/></span><span class="txt">我要</br>提问</span></a><a class="go-back feed-back" target="_blank" href="'+url+'"><span class="icon"><img src="https://os.alipayobjects.com/rmsportal/ILMqSfPsPTyXPAg.png"/></span><span class="txt">反馈</br>问卷</span></a>').insertBefore(".go-back");
+ } else if(type=='support') {
+   jQuery(".go-back").addClass('fn-hide');
+ }
+
+
+ if( typeof(KISSY)!=='undefined'){
+   
+ KISSY.use('node, event, dom', function(S, N, E, D) {
+        
+    //滚动条监控
+    E.on(window, "scroll", function() {       
+        var height = D.scrollTop(window);        
+        //返回顶部滚动监听
+        goBack(height);
+    });    
+   
+    
+    function goBack(height) {
+        var $quiz = N.all('.quiz'),
+            $applyApi = N.all('.applyApi'),
+            docHeight = N.all(document).height();
+        if (docHeight - height < 980) {          
+            $quiz.css({
+            	'margin-bottom':'90px'
+            })
+            N.all('.go-back').removeClass('go-back-fixed');
+            
+        } else {
+             $quiz.css({
+            	'margin-bottom':'90px'
+            });
+           N.all('.go-back').addClass('go-back-fixed');
+          	
+        }
+    };
+
+});
+ }
+
+</script>
+  
+  </body>
+</html>
